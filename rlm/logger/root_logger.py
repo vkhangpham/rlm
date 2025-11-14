@@ -2,8 +2,8 @@
 Root (colorful) logger for RLM client that tracks model outputs and message changes.
 """
 
-from typing import List, Dict
 from datetime import datetime
+from typing import Dict, List
 
 
 class ColorfulLogger:

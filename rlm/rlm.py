@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class RLM(ABC):
     @abstractmethod
     def completion(self, context: list[str] | str | dict[str, str], query: str) -> str:

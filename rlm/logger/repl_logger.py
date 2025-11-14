@@ -1,11 +1,13 @@
-from rich.console import Console
-from rich.syntax import Syntax
-from rich.panel import Panel
-from rich.text import Text
-from rich import box
-from rich.rule import Rule
 from dataclasses import dataclass
 from typing import List, Optional
+
+from rich import box
+from rich.console import Console
+from rich.panel import Panel
+from rich.rule import Rule
+from rich.syntax import Syntax
+from rich.text import Text
+
 
 @dataclass
 class CodeExecution:

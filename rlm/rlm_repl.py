@@ -2,16 +2,15 @@
 Simple Recursive Language Model (RLM) with REPL environment.
 """
 
-from typing import Dict, List, Optional, Any 
+from typing import Any, Dict, List, Optional
 
+import rlm.utils.utils as utils
 from rlm import RLM
+from rlm.logger.repl_logger import REPLEnvLogger
+from rlm.logger.root_logger import ColorfulLogger
 from rlm.repl import REPLEnv
 from rlm.utils.llm import OpenAIClient
-from rlm.utils.prompts import DEFAULT_QUERY, next_action_prompt, build_system_prompt
-import rlm.utils.utils as utils
-
-from rlm.logger.root_logger import ColorfulLogger
-from rlm.logger.repl_logger import REPLEnvLogger
+from rlm.utils.prompts import DEFAULT_QUERY, build_system_prompt, next_action_prompt
 
 
 class RLM_REPL(RLM):

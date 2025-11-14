@@ -4,8 +4,9 @@ OpenAI Client wrapper specifically for GPT-5 models.
 
 import os
 from typing import Optional
-from openai import OpenAI
+
 from dotenv import load_dotenv
+from openai import OpenAI
 
 load_dotenv()
 

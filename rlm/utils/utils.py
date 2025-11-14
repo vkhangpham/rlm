@@ -3,7 +3,8 @@ Utility functions for the RLM REPL Client.
 """
 
 import re
-from typing import List, Dict, Optional, Tuple, Any
+from typing import Any, Dict, List, Optional, Tuple
+
 
 def find_code_blocks(text: str) -> List[str]:
     """
@@ -95,7 +96,7 @@ def format_execution_result(
     # Show some key variables (excluding internal ones)
     important_vars = {}
     for key, value in locals_dict.items():
-        if not key.startswith('_') and not key in ['__builtins__', '__name__', '__doc__']:
+        if not key.startswith('_') and key not in ['__builtins__', '__name__', '__doc__']:
             try:
                 # Only show simple types or short representations
                 if isinstance(value, (str, int, float, bool, list, dict, tuple)):

@@ -1,5 +1,7 @@
-from rlm.rlm_repl import RLM_REPL
 import random
+
+from rlm.rlm_repl import RLM_REPL
+
 
 def generate_massive_context(num_lines: int = 1_000_000, answer: str = "1298418") -> str:
     print("Generating massive context with 1M lines...")
